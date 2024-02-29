@@ -1,0 +1,11 @@
+<div class="col justify-content-between">
+    <h4>Listado</h4>
+    <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor="let character of charactersList"> {{ character.name }} - Power: {{ character.power }} 
+
+        <button class="btn btn-danger" (click)="onDelete(character.id)"> X
+        </button>
+        </li>
+    </ul>
+</div>
